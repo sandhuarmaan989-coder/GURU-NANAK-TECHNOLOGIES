@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guru Nanak Technologies</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#0D47A1;
+    color:#fff;
+    padding:15px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+.search-box input{
+    padding:10px 15px;
+    border:none;
+    border-radius:30px;
+    outline:none;
+    width:220px;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    font-size:22px;
+    margin:20px 0;
+}
+
+.btn{
+    background:#ff9800;
+    color:black;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:30px;
+    display:inline-block;
+    font-weight:bold;
+}
+
+section{
+    padding:70px 8%;
+}
+
+.title{
+    text-align:center;
+    color:#0D47A1;
+    margin-bottom:40px;
+    font-size:36px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.box{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.box:hover{
+    transform:translateY(-8px);
+}
+
+.box h3{
+    color:#0D47A1;
+    margin-bottom:15px;
+}
+
+.about{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    font-size:18px;
+}
+
+.contact{
+    background:#0D47A1;
+    color:white;
+    text-align:center;
+}
+
+.contact a{
+    color:#FFD54F;
+    text-decoration:none;
+}
+
+iframe{
+    width:100%;
+    height:350px;
+    border:none;
+    border-radius:15px;
+    margin-top:20px;
+}
+
+footer{
+    background:#05245a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Floating Buttons */
+
+.floating-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+    z-index:999;
+}
+
+.floating-call{
+    position:fixed;
+    left:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#0D47A1;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    text-decoration:none;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+    z-index:999;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.search-box input{
+    width:100%;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+GURU NANAK TECHNOLOGIES
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Search Products...">
+</div>
+
+</header>
+
+<section class="hero" id="home">
+
+<div>
+
+<h1>Guru Nanak Technologies</h1>
+
+<p>Your Trusted Partner for Computers, Laptops, Printers, CCTV & IT Solutions</p>
+
+<a href="tel:9872851303" class="btn">📞 Call Now</a>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 class="title">Our Products & Services</h2>
+
+<div class="grid">
+
+<div class="box">
+<h3>💻 Laptops</h3>
+<p>Sales of branded laptops with warranty and support.</p>
+</div>
+
+<div class="box">
+<h3>🖥 Desktop Computers</h3>
+<p>Computers for home, office, education and business.</p>
+</div>
+
+<div class="box">
+<h3>🖨 Printers</h3>
+<p>Inkjet, Laser, All-in-One Printers & Accessories.</p>
+</div>
+
+<div class="box">
+<h3>📹 CCTV Cameras</h3>
+<p>Sales, Installation and Maintenance of CCTV Security Systems.</p>
+</div>
+
+<div class="box">
+<h3>🛠 Hardware Components</h3>
+<p>SSD, HDD, RAM, Motherboards, Cabinets, Power Supplies, Keyboards, Mouse and all computer accessories.</p>
+</div>
+
+<div class="box">
+<h3>🌐 Networking</h3>
+<p>LAN, Wi-Fi, Routers, Office Networking and Internet Solutions.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">About Us</h2>
+
+<div class="about">
+
+<p>
+
+<b>Guru Nanak Technologies</b> is a trusted IT and Computer Hardware Store providing high-quality technology products and professional services. We specialize in Laptops, Desktop Computers, Printers, CCTV Camera Systems, Networking Solutions and all types of Computer Hardware Components.
+
+Our goal is to deliver genuine products, affordable pricing and excellent customer support.
+
+</p>
+
+<br>
+
+<h3>Owner</h3>
+
+<p><b>G.S. SANDHU</b><br>Govt. Contractor</p>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 class="title" style="color:white;">Contact Us</h2>
+
+<h3>📞 Phone</h3>
+<p>98728-51303</p>
+
+<br>
+
+<h3>📧 Gmail</h3>
+
+<p>
+<a href="mailto:g.s.sandhu5263@gmail.com">
+g.s.sandhu5263@gmail.com
+</a>
+</p>
+
+<br>
+
+<h3>📍 Address</h3>
+
+<p>
+Shop No. 21,<br>
+Bishnoi Market,<br>
+Opp. Civil Hospital,<br>
+Mandi Dabwali, Haryana
+</p>
+
+<iframe
+src="https://www.google.com/maps?q=Shop%20No.%2021,%20Bishnoi%20Market,%20Opp.%20Civil%20Hospital,%20Mandi%20Dabwali&output=embed"
+loading="lazy">
+</iframe>
+
+<br><br>
+
+<a href="https://wa.me/919872851303" target="_blank" class="btn">
+💬 Chat on WhatsApp
+</a>
+
+</section>
+
+<footer>
+
+© 2026 Guru Nanak Technologies. All Rights Reserved.
+
+</footer>
+
+<!-- Floating Buttons -->
+
+<a href="tel:9872851303" class="floating-call">
+📞
+</a>
+
+<a href="https://wa.me/919872851303" target="_blank" class="floating-whatsapp">
+💬
+</a>
+
+<script>
+const searchInput=document.getElementById("searchInput");
+
+searchInput.addEventListener("keyup",function(){
+
+let filter=searchInput.value.toLowerCase();
+
+let cards=document.querySelectorAll(".box");
+
+cards.forEach(function(card){
+
+let text=card.innerText.toLowerCase();
+
+if(text.includes(filter)){
+card.style.display="block";
+}
+else{
+card.style.display="none";
+}
+
+});
+
+}); 
+</script>
+
+</body>
+</html>
